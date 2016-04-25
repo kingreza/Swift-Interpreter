@@ -1,2 +1,10 @@
-# Swift-Interpreter
-Design Patterns in Swift: Interpreter 
+<h1>Design Patterns in Swift: Interpreter</h1>
+This repository is part of a series. For the full list check out <a href="https://shirazian.wordpress.com/2016/04/11/design-patterns-in-swift/">Design Patterns in Swift</a>
+
+<h3>The problem:</h3>
+
+Our customers at <a href="http://www.yourmechanic.com">YourMechanic</a> can request quotes through our website or through their YourMechanic App. The final price for the requested quote is a combination of two variables, the cost for parts and the cost for labor. There are times we wish to apply specific adjustments for specific quotes. These adjustments could come from coupons, warranty claims or contests. We need a simple language that can express custom adjustments for quotes. For example we should be able to add a 20% discount for parts on a specific quote and a reduction of $10 on labor for another.
+
+<h3>The solution:</h3>
+
+Link to the repo for the completed project: <a href="https://github.com/kingreza/Swift-Interpreter">Swift - Interpreter</a>
