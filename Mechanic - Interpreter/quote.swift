@@ -35,5 +35,4 @@ class Quote {
       return partsPrice + laborPrice
     }
   }
-
 }

@@ -21,5 +21,4 @@ class Divide: Expression {
   func interpret(variables: [String : Expression]) -> Double {
     return leftOperand.interpret(variables) / rightOperand.interpret(variables)
   }
-
 }

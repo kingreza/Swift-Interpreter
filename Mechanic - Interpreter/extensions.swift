@@ -24,6 +24,7 @@ extension String {
   func contains(find: String) -> Bool {
     return self.rangeOfString(find) != nil
   }
+
   func trim() -> String {
     return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
   }
