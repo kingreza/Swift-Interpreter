@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5718D74F1CCDB39200A98BFE /* quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5718D74E1CCDB39200A98BFE /* quote.swift */; };
 		5796D10B1CCD67DC00286191 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D10A1CCD67DC00286191 /* main.swift */; };
+		5796D1131CCD694500286191 /* expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1121CCD694500286191 /* expression.swift */; };
+		5796D1151CCD69AF00286191 /* number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1141CCD69AF00286191 /* number.swift */; };
+		5796D1171CCD6A5E00286191 /* add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1161CCD6A5E00286191 /* add.swift */; };
+		5796D1191CCD6C5400286191 /* subtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1181CCD6C5400286191 /* subtract.swift */; };
+		5796D11B1CCD6CB600286191 /* multiply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D11A1CCD6CB600286191 /* multiply.swift */; };
+		5796D11D1CCD6CD100286191 /* divide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D11C1CCD6CD100286191 /* divide.swift */; };
+		5796D11F1CCD6E1300286191 /* variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D11E1CCD6E1300286191 /* variable.swift */; };
+		5796D1211CCD6F0500286191 /* evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1201CCD6F0500286191 /* evaluator.swift */; };
+		5796D1231CCD705600286191 /* stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1221CCD705600286191 /* stack.swift */; };
+		5796D1251CCD753100286191 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D1241CCD753100286191 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +34,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5718D74E1CCDB39200A98BFE /* quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quote.swift; sourceTree = "<group>"; };
 		5796D1071CCD67DC00286191 /* Mechanic - Interpreter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mechanic - Interpreter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5796D10A1CCD67DC00286191 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5796D1121CCD694500286191 /* expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = expression.swift; sourceTree = "<group>"; };
+		5796D1141CCD69AF00286191 /* number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = number.swift; sourceTree = "<group>"; };
+		5796D1161CCD6A5E00286191 /* add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = add.swift; sourceTree = "<group>"; };
+		5796D1181CCD6C5400286191 /* subtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subtract.swift; sourceTree = "<group>"; };
+		5796D11A1CCD6CB600286191 /* multiply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = multiply.swift; sourceTree = "<group>"; };
+		5796D11C1CCD6CD100286191 /* divide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = divide.swift; sourceTree = "<group>"; };
+		5796D11E1CCD6E1300286191 /* variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = variable.swift; sourceTree = "<group>"; };
+		5796D1201CCD6F0500286191 /* evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = evaluator.swift; sourceTree = "<group>"; };
+		5796D1221CCD705600286191 /* stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stack.swift; sourceTree = "<group>"; };
+		5796D1241CCD753100286191 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5718D74C1CCDB2FC00A98BFE /* Expressions */ = {
+			isa = PBXGroup;
+			children = (
+				5796D1201CCD6F0500286191 /* evaluator.swift */,
+				5796D1121CCD694500286191 /* expression.swift */,
+				5796D1141CCD69AF00286191 /* number.swift */,
+				5796D1161CCD6A5E00286191 /* add.swift */,
+				5796D1181CCD6C5400286191 /* subtract.swift */,
+				5796D11A1CCD6CB600286191 /* multiply.swift */,
+				5796D11C1CCD6CD100286191 /* divide.swift */,
+				5796D11E1CCD6E1300286191 /* variable.swift */,
+			);
+			name = Expressions;
+			sourceTree = "<group>";
+		};
+		5718D74D1CCDB31800A98BFE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5796D1221CCD705600286191 /* stack.swift */,
+				5796D1241CCD753100286191 /* extensions.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		5796D0FE1CCD67DC00286191 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +103,10 @@
 		5796D1091CCD67DC00286191 /* Mechanic - Interpreter */ = {
 			isa = PBXGroup;
 			children = (
+				5718D74D1CCDB31800A98BFE /* Utility */,
+				5718D74C1CCDB2FC00A98BFE /* Expressions */,
 				5796D10A1CCD67DC00286191 /* main.swift */,
+				5718D74E1CCDB39200A98BFE /* quote.swift */,
 			);
 			path = "Mechanic - Interpreter";
 			sourceTree = "<group>";
@@ -72,6 +121,7 @@
 				5796D1031CCD67DC00286191 /* Sources */,
 				5796D1041CCD67DC00286191 /* Frameworks */,
 				5796D1051CCD67DC00286191 /* CopyFiles */,
+				5796D1111CCD683F00286191 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -114,12 +164,39 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5796D1111CCD683F00286191 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5796D1031CCD67DC00286191 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5796D1231CCD705600286191 /* stack.swift in Sources */,
+				5796D1151CCD69AF00286191 /* number.swift in Sources */,
+				5796D1171CCD6A5E00286191 /* add.swift in Sources */,
+				5796D1251CCD753100286191 /* extensions.swift in Sources */,
+				5796D1211CCD6F0500286191 /* evaluator.swift in Sources */,
 				5796D10B1CCD67DC00286191 /* main.swift in Sources */,
+				5796D1191CCD6C5400286191 /* subtract.swift in Sources */,
+				5796D1131CCD694500286191 /* expression.swift in Sources */,
+				5718D74F1CCDB39200A98BFE /* quote.swift in Sources */,
+				5796D11B1CCD6CB600286191 /* multiply.swift in Sources */,
+				5796D11D1CCD6CD100286191 /* divide.swift in Sources */,
+				5796D11F1CCD6E1300286191 /* variable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +316,7 @@
 				5796D1101CCD67DD00286191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
