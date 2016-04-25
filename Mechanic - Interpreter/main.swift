@@ -28,6 +28,9 @@ quote.adjustments = "l - l * 0.2 + p - p * 0.1"
 
 print(quote.totalPrice)
 
+//adjustment: total price is %20 off total price
+quote.adjustments = "l - l * 0.2 + p - p * 0.2"
+
 //adjustment total price is parts * labor :|
 quote.adjustments = "p * l"
 print(quote.totalPrice)
