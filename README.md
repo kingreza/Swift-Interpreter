@@ -1,3 +1,7 @@
+<h1>Design Patterns in Swift: Interpreter</h1>
+This repository is part of a series. For the full list check out <a href="https://shirazian.wordpress.com/2016/04/11/design-patterns-in-swift/">Design Patterns in Swift</a>
+
+
 <h3>The problem:</h3>
 Our customers at <a href="http://www.yourmechanic.com">YourMechanic</a>  request quotes through our website or through their YourMechanic App. The final price for a quote is a combination of two variables, the cost of parts and the cost of labor. We want the ability to apply specific adjustments to either parts or labor prices. These adjustments could come from coupons, warranty claims or contests. We need a simple language that can express these custom adjustments. For example, we should be able to define an expression that can add a 20% discount for parts. Or a another code that reduces $10 on labor.  Or one that does both.
 
