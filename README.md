@@ -481,4 +481,4 @@ extension String {
     return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
   }
 }
-swift
+```
