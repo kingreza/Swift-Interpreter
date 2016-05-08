@@ -455,3 +455,30 @@ Download a copy of it and play around with it. See if you can find ways to impro
 * We assume our adjustment input is correct, add descriptive error checking for our parser.
 * The process used for honoring order of operations in this solution is simple but not efficient. How can we improve on it?
 * Add parenthesis to our language  
+
+
+We also defined a few extension in this project that I didn't explain in details because I felt it distracted from an already complicated explanation of the interpreter design pattern. They are included in the repo but if you're reading the code and you see calls to functions that you haven't seen before they are most likely defined as an extension. Here they are:
+
+```swift
+extension String {
+  struct NumberFormatter {
+    static let instance = NSNumberFormatter()
+  }
+
+  var doubleValue: Double? {
+    return NumberFormatter.instance.numberFromString(self)?.doubleValue
+  }
+
+  var integerValue: Int? {
+    return NumberFormatter.instance.numberFromString(self)?.integerValue
+  }
+
+  func contains(find: String) -> Bool {
+    return self.rangeOfString(find) != nil
+  }
+
+  func trim() -> String {
+    return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+  }
+}
+swift
