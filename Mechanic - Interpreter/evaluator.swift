@@ -98,11 +98,11 @@ class Evaluator: Expression {
   }
 
   func interpret(variables: [String : Expression]) -> Double {
-    let expressions = parseoutAdditionsAndSubtractions(expression)
 
     if (expression.contains("/") || expression.contains("*")) &&
        (expression.contains("+") || expression.contains("-")) {
 
+      let expressions = parseoutAdditionsAndSubtractions(expression)
       var newExpression = ""
       var index = 0
       for expression in expressions {

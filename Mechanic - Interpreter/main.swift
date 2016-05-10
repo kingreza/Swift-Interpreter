@@ -11,12 +11,17 @@ import Foundation
 
 var quote = Quote(partsPrice: 145.00, laborPrice: 45.00)
 
+
 //adjustment: total price is only labor plus $20
 quote.adjustments = "l + 20.00"
 print(quote.totalPrice)
 
 //adjustment: total price is partsPrice - $10
 quote.adjustments = "p - 10.00"
+print(quote.totalPrice)
+
+//adjustment: total price is labor and part - $10
+quote.adjustments = "l + p - 10.00"
 print(quote.totalPrice)
 
 //adjustment: total price is labor + 10% off parts
